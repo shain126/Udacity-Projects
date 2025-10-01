@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>NumPy Quick Reference - Complete</title>
+  <style>
+    body { font-family: Inter, Arial, sans-serif; margin: 20px; color: #111; }
+    h1 { color: #123; }
+    h2 { color: #234; margin-top: 24px; border-bottom: 1px solid #eee; padding-bottom: 6px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+    th, td { border: 1px solid #e2e8f0; padding: 8px 10px; text-align: left; vertical-align: top; }
+    th { background:#0b5394; color: #fff; }
+    tr:nth-child(even) { background: #fbfcfd; }
+    code { background: #f4f6f8; padding: 2px 6px; border-radius: 4px; font-size: 0.95em; }
+    a.doc { color: #0b5394; text-decoration: none; }
+    a.doc:hover { text-decoration: underline; }
+    .muted { color: #666; font-size: 0.95em; }
+  </style>
+</head>
+<body>
+  <h1>NumPy Quick Reference — Complete</h1>
+  <p class="muted">This page includes the functions you asked for, grouped by category. Each function links to the official NumPy documentation (opens in a new tab).</p>
+
+  <h2>General Purpose</h2>
+  <table>
+    <tr><th>Function / Method</th><th>Description</th></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/2.2/reference/generated/numpy.ndarray.dtype.html" target="_blank">numpy.ndarray.dtype</a></td><td>Return the data-type of the elements of the array. Arrays are homogeneous; dtype describes element type.</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/2.1/reference/generated/numpy.ndarray.ndim.html" target="_blank">numpy.ndarray.ndim</a></td><td>Return the number of array dimensions (rank). E.g., returns <code>2</code> for a 4×3 array.</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/2.2/reference/generated/numpy.ndarray.shape.html" target="_blank">numpy.ndarray.shape</a></td><td>Return a tuple representing the array dimensions, e.g., <code>(rows, columns)</code> for a 2‑D array.</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/2.1/reference/generated/numpy.ndarray.size.html" target="_blank">numpy.ndarray.size</a></td><td>Return the number of elements present in the array (equal to the product of the shape dimensions).</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/2.0/reference/generated/numpy.save.html" target="_blank">numpy.save</a></td><td>Save an array to a binary <code>.npy</code> file.</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/2.2/reference/generated/numpy.load.html" target="_blank">numpy.load</a></td><td>Load arrays or pickled objects from <code>.npy</code>, <code>.npz</code> or pickled files.</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/2.3/reference/random/generated/numpy.random.random.html" target="_blank">numpy.random.random</a></td><td>Return random floats in the half-open interval <code>[0.0, 1.0)</code> in the specified shape.</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/2.3/reference/random/generated/numpy.random.randint.html" target="_blank">numpy.random.randint</a></td><td>Return random integers from the half-open interval <code>[low, high)</code> in a specified shape.</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/2.3/reference/random/generated/numpy.random.normal.html" target="_blank">numpy.random.normal</a></td><td>Return random samples from a Gaussian (normal) distribution (specify mean, std, size).</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/2.1/reference/random/generated/numpy.random.permutation.html" target="_blank">numpy.random.permutation</a></td><td>Return a randomly permuted sequence (or permuted copy of an array).</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/stable/reference/generated/numpy.reshape.html" target="_blank">numpy.reshape / numpy.ndarray.reshape</a></td><td>Returns an array containing the same elements with a new shape, without affecting the original array (method and function versions available).</td></tr>
+  </table>
+
+  <h2>Array Creation</h2>
+  <table>
+    <tr><th>Function / Method</th><th>Description</th></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/stable/reference/generated/numpy.ones.html" target="_blank">numpy.ones</a></td><td>Return a new array of given shape and type, filled with 1s.</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/stable/reference/generated/numpy.zeros.html" target="_blank">numpy.zeros</a></td><td>Return a new array of given shape and type, filled with 0s.</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/stable/reference/generated/numpy.full.html" target="_blank">numpy.full</a></td><td>Return a new array of given shape and type, filled with a specified value.</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/stable/reference/generated/numpy.eye.html" target="_blank">numpy.eye</a></td><td>Return a 2‑D array with 1s on the diagonal and 0s elsewhere (identity matrix).</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/stable/reference/generated/numpy.diag.html" target="_blank">numpy.diag</a></td><td>Extract the diagonal elements or construct a diagonal array from given values.</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/stable/reference/generated/numpy.unique.html" target="_blank">numpy.unique</a></td><td>Return the sorted unique elements of an array.</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/stable/reference/generated/numpy.array.html" target="_blank">numpy.array</a></td><td>Create an n‑dimensional array from Python sequences or other array-like objects.</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/stable/reference/generated/numpy.arange.html" target="_blank">numpy.arange</a></td><td>Return evenly spaced values within a half-open interval <code>[start, stop)</code>.</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/stable/reference/generated/numpy.linspace.html" target="_blank">numpy.linspace</a></td><td>Return evenly spaced numbers over a specified closed interval <code>[start, stop]</code> (configurable).</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/stable/reference/generated/numpy.copy.html" target="_blank">numpy.ndarray.copy</a></td><td>Return a copy of the array (deep copy of the data).</td></tr>
+  </table>
+
+  <h2>Operating with Elements and Indices</h2>
+  <table>
+    <tr><th>Function / Method</th><th>Description</th></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/stable/reference/generated/numpy.insert.html" target="_blank">numpy.insert</a></td><td>Insert values along the given axis before the specified indices.</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/stable/reference/generated/numpy.delete.html" target="_blank">numpy.delete</a></td><td>Return a new array after deleting sub‑arrays along a specified axis.</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/stable/reference/generated/numpy.append.html" target="_blank">numpy.append</a></td><td>Append values to the end of an array (creates a new array).</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/stable/reference/generated/numpy.hstack.html" target="_blank">numpy.hstack</a></td><td>Stack arrays in sequence horizontally (column-wise).</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/stable/reference/generated/numpy.vstack.html" target="_blank">numpy.vstack</a></td><td>Stack arrays in sequence vertically (row-wise); result is at least 2‑D.</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/stable/reference/generated/numpy.sort.html" target="_blank">numpy.sort</a></td><td>Return a sorted copy of an array.</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.sort.html" target="_blank">numpy.ndarray.sort</a></td><td>Sort an array in‑place (method).</td></tr>
+  </table>
+
+  <h2>Set Operations</h2>
+  <table>
+    <tr><th>Function / Method</th><th>Description</th></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/stable/reference/generated/numpy.intersect1d.html" target="_blank">numpy.intersect1d</a></td><td>Find the intersection of two arrays (unique, sorted).</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/stable/reference/generated/numpy.setdiff1d.html" target="_blank">numpy.setdiff1d</a></td><td>Find the set difference of two arrays (elements in a not in b).</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/stable/reference/generated/numpy.union1d.html" target="_blank">numpy.union1d</a></td><td>Return the unique, sorted array of values that are in either input array.</td></tr>
+  </table>
+
+  <h2>Arithmetic and Statistical Operations</h2>
+  <table>
+    <tr><th>Function / Method</th><th>Description</th></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/stable/reference/generated/numpy.add.html" target="_blank">numpy.add</a></td><td>Element‑wise addition of arrays.</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/stable/reference/generated/numpy.subtract.html" target="_blank">numpy.subtract</a></td><td>Element‑wise subtraction of arrays.</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/stable/reference/generated/numpy.multiply.html" target="_blank">numpy.multiply</a></td><td>Element‑wise multiplication of arrays.</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/stable/reference/generated/numpy.divide.html" target="_blank">numpy.divide</a></td><td>Element‑wise true division of arrays.</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/stable/reference/generated/numpy.exp.html" target="_blank">numpy.exp</a></td><td>Compute the exponential of all elements in the input array.</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/stable/reference/generated/numpy.power.html" target="_blank">numpy.power</a></td><td>First array elements raised to powers from second array, element‑wise.</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/stable/reference/generated/numpy.sqrt.html" target="_blank">numpy.sqrt</a></td><td>Return the non‑negative square root of an array, element‑wise.</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.min.html" target="_blank">numpy.ndarray.min</a></td><td>Return the minimum value along the specified axis (method).</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.max.html" target="_blank">numpy.ndarray.max</a></td><td>Return the maximum value along the specified axis (method).</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/stable/reference/generated/numpy.mean.html" target="_blank">numpy.mean / numpy.ndarray.mean</a></td><td>Compute the arithmetic mean along the specified axis (function and ndarray method).</td></tr>
+    <tr><td><a class="doc" href="https://numpy.org/doc/stable/reference/generated/numpy.median.html" target="_blank">numpy.median</a></td><td>Compute the median along the specified axis.</td></tr>
+  </table>
+
+  <p class="muted">Created for quick revision. All links point to the official NumPy documentation (opens in a new tab).</p>
+</body>
+</html>
