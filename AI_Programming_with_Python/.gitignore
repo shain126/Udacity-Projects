@@ -1,0 +1,22 @@
+# Ignore all log files
+*.log
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore build folders
+build/
+dist/
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore virtual environment
+venv/
+
+# Ignore dataset files
+data/
+
+#Ignore macOS system files
+.DS_Store
