@@ -1,0 +1,13 @@
+{
+    "python.defaultInterpreterPath": "${workspaceFolder}/pytorch/bin/python",
+    "python.terminal.activateEnvironment": true,
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/pytorch/lib/python3.14/site-packages"
+    ],
+    "jupyter.kernels.filter": [
+        {
+            "path": "${workspaceFolder}/pytorch/bin/python"
+        }
+    ]
+}
+
